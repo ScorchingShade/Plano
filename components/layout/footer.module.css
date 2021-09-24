@@ -1,0 +1,79 @@
+@import "../../design-templates/colors.css";
+
+.appFooter {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    bottom: 0;
+    height: 10rem;
+}
+
+.logo {
+    margin-top: 1rem;
+    font-size: 2rem;
+    padding: 0 1rem;
+    text-align: center;
+    
+
+}
+
+
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.logo *:hover {
+    color: var(--call-to-action);
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: rgb(199, 199, 199);
+    margin: 0;
+    font-style: italic;
+}
+
+
+@media(min-width:52rem) {
+    .appFooter {
+        display: flex;
+        flex-direction: row;
+        background: black;
+        bottom: 0;
+        align-items: center;
+        height: 10rem;
+    }
+
+    .logo {
+        margin-top: 1rem;
+        font-size: 2rem;
+        padding: 0 4rem;
+
+    }
+
+    
+
+
+
+    .logo a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .logo *:hover {
+        color: var(--call-to-action);
+    }
+
+    .subheading {
+        font-size: 1.2rem;
+        color: rgb(199, 199, 199);
+        font-style: italic;
+        position:absolute;
+    }
+
+   
+}
