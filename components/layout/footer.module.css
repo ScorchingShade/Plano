@@ -103,6 +103,34 @@
 }
 
 
+.info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.info p{
+    color:white;
+}
+
+.iconLabel{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    color:white;
+    font-size: 2rem;
+    left:0;
+    margin: 2rem 0;
+}
+
+ .iconLabel i:hover{
+    color:var(--call-to-action);
+    cursor: pointer;
+}
+
+
 
 @media(min-width:52rem) {
     .appFooter {
