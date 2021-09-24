@@ -1,10 +1,21 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import Link from "next/link";
 
 import classes from "./navbar.module.css";
 
 function Navbar() {
+
+    const [navOpen, setNavOpen] = useState(false);
+
+
+    const mobileNavHandler=(e)=>{
+        setNavOpen(!navOpen);
+        console.log(navOpen);
+    }
+
+
   return (
+      <Fragment>
     <header className={classes.header}>
       <div className={classes.logo}>
         <Link href="/">Plano</Link>
@@ -24,13 +35,34 @@ function Navbar() {
         <button type="button" className={classes.callToAction}>
           Sign in
         </button>
-        <div className={classes.bars}>
+        <button className={classes.bars} onClick={mobileNavHandler}>
              <i className="fa fa-bars"></i>
-        </div>
+        </button>
        
       </nav>
+
      
     </header>
+
+    <nav className={navOpen?classes.mobileNav:classes.close}>
+        <ul>
+          <li className={classes.links}>
+            <Link href="/">API</Link>
+          </li>
+          <li className={classes.links}>
+            <Link href="/">Dashboard</Link>
+          </li>
+          <li className={classes.links}>
+            <Link href="/">Planners</Link>
+          </li>
+        </ul>
+        <button type="button" className={classes.callToActionMobile}>
+          Sign in
+        </button>
+       
+      </nav>
+    </Fragment>
+    
   );
 }
 
