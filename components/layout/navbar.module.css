@@ -84,6 +84,7 @@
   .bars:hover,
   .bars:active{
     color:var(--call-to-action);
+    
   }
 
 
