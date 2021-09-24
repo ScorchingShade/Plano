@@ -13,9 +13,6 @@
     font-size: 2rem;
     padding: 0 1rem;
     text-align: center;
-    flex-basis: 25%;
-    
-
 }
 
 
@@ -24,7 +21,6 @@
     text-decoration: none;
     color: white;
     
-
 }
 
 .logo *:hover {
@@ -37,6 +33,75 @@
     margin: 0;
     font-style: italic;
 }
+
+
+
+/* This is for second section */
+.links{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.link{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.links h3{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+
+.links_list{
+    list-style: none;
+    flex-direction: column;
+    padding:0;
+}
+
+.link a{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    font-size: 1rem;    
+    
+}
+
+
+.link a:hover{
+    color: var(--call-to-action);
+}
+
+.callToAction{
+    align-self: center;
+    width: 8rem;
+    border-radius: 20px;
+    border-style: none;
+    height: 4vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), var(--call-to-action));
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+.callToAction:hover{
+    color: var(--call-to-action);
+    background:white;
+}
+
+.callToAction:active{
+    transform: translateY(2px)
+}
+
 
 
 @media(min-width:52rem) {
@@ -113,6 +178,11 @@
         font-size: 1rem;
     }
 
+
+    .link a:hover{
+        color: var(--call-to-action);
+    }
+
     .callToAction{
         align-self: center;
         width: 8rem;
@@ -125,12 +195,21 @@
         margin-left: 2rem;
     }
 
+    .callToAction:hover{
+        color: var(--call-to-action);
+        background:white;
+    }
+
+    .callToAction:active{
+        transform: translateY(2px)
+    }
+
 
     .info{
         flex-basis: 25%;
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 2rem;
     }
 
     .info p{
@@ -146,6 +225,10 @@
         left:0;
     }
 
+     .iconLabel i:hover{
+        color:var(--call-to-action);
+        cursor: pointer;
+    }
 
    
 }

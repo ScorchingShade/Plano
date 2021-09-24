@@ -48,13 +48,24 @@ function Footer() {
             Explore Plano and see the power of atomic decisions made today!
           </p>
 
-        <div className={classes.iconLabel}>
-            <Link href="/"><i className="fa fa-instagram"></i></Link>
-            <Link href="/"><i className="fa fa-facebook"></i></Link>
-            <Link href="/"><i className="fa fa-github"></i></Link>
-            <Link href="/"><i className="fa fa-twitter"></i></Link>
-        
-        </div>
+          <div className={classes.iconLabel}>
+            <Link href="/" className={classes.icons}>
+              <i className="fa fa-instagram"></i>
+            </Link>
+            <Link href="/">
+              <i className="fa fa-facebook"></i>
+            </Link>
+            <Link href="/">
+              <i className="fa fa-github"></i>
+            </Link>
+            <Link href="/">
+              <i className="fa fa-twitter"></i>
+            </Link>
+          </div>
+          <div>
+              <p>Made with ❤️ in India </p>
+              <p>Copyright © 2021, Plano</p>
+          </div>
         </div>
       </footer>
     </Fragment>
