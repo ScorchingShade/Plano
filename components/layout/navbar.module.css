@@ -5,7 +5,7 @@
     flex-direction: row;
     background-color: black;
     height: auto;
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
 
 .navigation {
@@ -163,11 +163,13 @@
     display: none;
 }
 
-@media(min-width:40rem) {
+@media(min-width:52rem) {
     .header {
         display: flex;
         flex-direction: row;
         background-color: black;
+        justify-content:center;
+        align-items: center;
         height: 8vh;
         padding: 1rem;
     }
@@ -176,12 +178,14 @@
         display: flex;
         width: 100vw;
         justify-content: flex-end;
+        padding: 0 4rem;
     }
 
     .navigation ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        list-style: none;
         width: 50%;
     }
 
@@ -207,7 +211,7 @@
         width: 8rem;
         border-radius: 20px;
         border-style: none;
-        height: 4vh;
+        height: auto;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), var(--call-to-action));
         color: white;
         font-weight: bold;
@@ -215,7 +219,7 @@
 
     .logo {
         font-size: 2rem;
-
+        padding: 0 4rem;
 
         margin-top: 2px;
     }
