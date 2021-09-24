@@ -163,6 +163,10 @@
     color: var(--call-to-action)
 }
 
+.callToActionMobile:active {
+    transform:translateY(4px);
+}
+
 .open {
     display: block;
 }

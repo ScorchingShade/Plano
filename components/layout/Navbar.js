@@ -11,12 +11,12 @@ function Navbar() {
 
     const mobileNavHandler=(e)=>{
         setNavOpen(!navOpen);
-        console.log(navOpen);
+        
     }
 
     const callToActionHandler=()=>{
         router.push("/");
-        console.log("hello")
+        
     }
 
 
@@ -62,7 +62,7 @@ function Navbar() {
             <Link href="/">Planners</Link>
           </li>
         </ul>
-        <button type="button" className={classes.callToActionMobile}>
+        <button type="button" className={classes.callToActionMobile} onClick={callToActionHandler}>
           Sign in
         </button>
        
