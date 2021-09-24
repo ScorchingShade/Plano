@@ -63,6 +63,11 @@
     margin-top: 2px;
 }
 
+
+.logo a:hover{
+    color:var(--call-to-action);
+}
+
 .logo * {
     text-decoration: none;
     cursor: pointer;
@@ -78,10 +83,13 @@
     background: none;
 }
 
-.bars:hover,
-.bars:active {
-    color: var(--call-to-action);
+.bars:hover {
+    color: var(--call-to-action);  
 
+}
+
+.bars:active{
+    transform: translateY(2px);
 }
 
 
@@ -215,6 +223,7 @@
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), var(--call-to-action));
         color: white;
         font-weight: bold;
+        cursor:pointer;
     }
 
     .logo {
@@ -222,6 +231,10 @@
         padding: 0 4rem;
 
         margin-top: 2px;
+    }
+
+    .logo a:hover{
+        color: var(--call-to-action);
     }
 
     .logo * {
@@ -235,6 +248,19 @@
         font-size: 3rem;
     }
 
+    .callToAction:hover
+    {
+        background: white;
+        color: var(--call-to-action);
+        
+    }
+
+    .callToAction:active{
+        transform: translateY(2px);
+        
+    }
+
+    
 
 
 }

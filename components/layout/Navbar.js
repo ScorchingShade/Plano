@@ -1,16 +1,22 @@
 import React, { Fragment, useState } from "react";
 import Link from "next/link";
+import {useRouter} from "next/router";
 
 import classes from "./navbar.module.css";
 
 function Navbar() {
 
     const [navOpen, setNavOpen] = useState(false);
-
+    const router= useRouter();
 
     const mobileNavHandler=(e)=>{
         setNavOpen(!navOpen);
         console.log(navOpen);
+    }
+
+    const callToActionHandler=()=>{
+        router.push("/");
+        console.log("hello")
     }
 
 
@@ -32,7 +38,7 @@ function Navbar() {
             <Link href="/">Planners</Link>
           </li>
         </ul>
-        <button type="button" className={classes.callToAction}>
+        <button type="button" className={classes.callToAction} onClick={callToActionHandler}>
           Sign in
         </button>
         <button className={classes.bars} onClick={mobileNavHandler}>
