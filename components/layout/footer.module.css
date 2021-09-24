@@ -5,7 +5,7 @@
     flex-direction: column;
     background: black;
     bottom: 0;
-    height: 10rem;
+    height: auto;
 }
 
 .logo {
@@ -13,6 +13,7 @@
     font-size: 2rem;
     padding: 0 1rem;
     text-align: center;
+    flex-basis: 25%;
     
 
 }
@@ -45,14 +46,19 @@
         background: black;
         bottom: 0;
         align-items: center;
-        height: 10rem;
+        height: auto;
+        padding: 1rem;
+        
     }
 
     .logo {
         margin-top: 1rem;
         font-size: 2rem;
         padding: 0 4rem;
-
+        flex-basis: 25%;
+        height: 50%;
+        border-right: solid 2px white;
+        
     }
 
     
@@ -62,6 +68,7 @@
     .logo a {
         text-decoration: none;
         color: white;
+        
     }
 
     .logo *:hover {
@@ -74,6 +81,71 @@
         font-style: italic;
         position:absolute;
     }
+
+
+
+    .links{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .links h3{
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+
+    }
+
+    .links_list{
+        list-style: none;
+        flex-direction: column;
+        margin: 1rem 0;
+        align-self: center;
+  
+    }
+
+    .link a{
+        color: white;
+        text-decoration: none;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .callToAction{
+        align-self: center;
+        width: 8rem;
+        border-radius: 20px;
+        border-style: none;
+        height: 4vh;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), var(--call-to-action));
+        color: white;
+        font-weight: bold;
+        margin-left: 2rem;
+    }
+
+
+    .info{
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .info p{
+        color:white;
+    }
+
+    .iconLabel{
+        display: flex;
+        flex-direction: row;
+        width:50%;
+        justify-content: space-between;
+        color:white;
+        left:0;
+    }
+
 
    
 }
