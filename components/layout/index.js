@@ -7,8 +7,10 @@ function Layout(props) {
   return (
     <Fragment>
       <Navbar />
-      <main className={classes.mainbody}>{props.children}</main>
+      <main className={classes.mainbody}>{props.children}
       <Footer/>
+      </main>
+      
     </Fragment>
   );
 }
