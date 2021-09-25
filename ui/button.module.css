@@ -1,0 +1,19 @@
+.btn{
+    display: block;
+    margin: 10px;
+    width: 18rem;
+    border-radius: 20px;
+    border-style: none;
+    height: 8vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), var(--call-to-action));
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #02afa1;
+  border-color: #02afa1;
+}

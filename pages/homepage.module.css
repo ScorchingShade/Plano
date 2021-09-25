@@ -1,0 +1,228 @@
+.body{
+    display:flex;
+    background:black;
+    height:auto;
+    width:100%;
+    flex-direction:column;
+    
+    
+    
+
+}
+
+.upperContainer{
+    display:flex;
+    flex-direction:column;
+    height:50%;
+    width:100%;
+    margin-top: 5rem;
+    
+}
+
+.box1{
+    width:50%;
+    height:20rem;
+    border: 1rem solid #11B5F7;
+    margin: -1.5rem 1.5rem 0 3.0rem;
+    position:relative;
+    z-index: 0;
+    display:flex;
+    align-self: center;
+    align-items: center;
+}
+
+
+.caption1{
+    color:white;
+    text-align:center;
+    z-index: 1;
+    font-size:1.5rem;
+    font-weight:1000;
+    padding:2rem 0;
+    margin: 0 0 2rem -5rem;
+}
+
+.illus{
+    width:100%;
+    align-self: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:1.2rem;
+}
+
+
+.btn{
+    display: block;
+    
+    width: 13rem;
+    border-radius: 20px;
+    border-style: none;
+    height: auto;
+    background:#11B5F7;
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+    padding:1rem;
+    box-shadow: 1px 8px rgb(100, 100, 100);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #02afa1;
+  border-color: #02afa1;
+}
+
+
+.lowerContainer{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    width:100%;
+    padding: 2rem;
+}
+
+
+.caption2{
+    color:white;
+    text-align:center;
+    z-index: 1;
+    font-size:1.5rem;
+    font-weight:1000;
+    padding:3rem 1rem;
+    height:auto;
+  
+}
+
+.btnCt{
+    align-self: center;
+    justify-self:center;
+}
+
+.lowerBox{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+        height: auto;
+        border: 1rem solid #11B5F7;
+        position:relative;
+        z-index: 0;
+}
+
+
+
+
+
+
+@media (min-width:65rem) {
+    .body{
+        display:flex;
+        background:black;
+        height:auto;
+        width:100%;
+        flex-direction:column;
+        padding: 3rem 4rem;
+        
+        
+    
+    }
+    
+    .upperContainer{
+        display:flex;
+        flex-direction:row;
+        height:50%;
+        width:100%;
+        padding: 4rem;
+        margin-top: 0;
+    }
+    
+    .box1{
+        width:50%;
+        height:20rem;
+        border: 1rem solid #11B5F7;
+        margin: -1.5rem 1.5rem 0 3.0rem;
+        position:relative;
+        z-index: 0;
+        display:flex;
+        align-self: center;
+        align-items: center;
+    }
+    
+    .caption1{
+        color:white;
+        text-align:center;
+        z-index: 1;
+        font-size:1.5rem;
+        font-weight:1000;
+        padding:2rem 0;
+        margin: 0 0 2rem -5rem;
+    }
+    
+    .illus{
+        width:100%;
+        align-self: center;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .lowerContainer{
+        display:flex;
+        flex-direction:row;
+        height:auto;
+        width:100%;
+        padding: 2rem;
+    }
+    
+    .lowerBox{
+        display:flex;
+        flex-direction:row;
+        width:100%;
+            height: auto;
+            border: 1rem solid #11B5F7;
+            position:relative;
+            z-index: 0;
+    }
+    
+    .caption2{
+        color:white;
+        text-align:center;
+        z-index: 1;
+        font-size:1.5rem;
+        font-weight:1000;
+        padding:3rem 1rem;
+        height:auto;
+      
+    }
+    
+    .btnCt{
+        align-self: center;
+        justify-self:center;
+    }
+    
+    .btnAlignDev{
+        margin: -1rem -2rem 0 20rem;
+    }
+    
+    .btn{
+        display: block;
+        
+        width: 13rem;
+        border-radius: 20px;
+        border-style: none;
+        height: auto;
+        background:#11B5F7;
+        color: white;
+        font-size: 1rem;
+        margin-top: 30px;
+        padding:1rem;
+        box-shadow: 1px 8px rgb(100, 100, 100);
+    }
+    
+    .btn:hover,
+    .btn:active {
+      background-color: #02afa1;
+      border-color: #02afa1;
+    }
+    
+}

@@ -1,0 +1,213 @@
+.body{
+    height:100%;
+    width:100%;
+    background: black;
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: 3fr 2fr;
+    grid-template-areas:    "head1 illustration"
+                            "lower1 lower2";
+    
+    justify-content:center;
+    align-items:center;
+}
+
+.box_bg{
+    width:22rem;
+    height:20rem;
+    border: 1rem solid #11B5F7;
+    grid-area: head1;
+    margin: -1.5rem 1.5rem 0 3.0rem;
+    position:relative;
+    z-index: 0;
+    display:flex;
+
+}
+
+.illus{
+    grid-area: illustration;
+    margin: -1.5rem 1.5rem 0 8.0rem;
+    justify-content: center;
+    align-items:center;
+    justify-content: center;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.bigBox{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    width:100%;
+    height: 16rem;
+    border: 1rem solid #11B5F7;
+    position:relative;
+    z-index: 0;
+    margin-top:2rem;
+}
+
+
+.caption1{
+    color:white;
+    grid-area:head1;
+    text-align:center;
+    z-index: 1;
+    font-size:1.5rem;
+    font-weight:1000;
+    padding:2rem 0;
+}
+
+.caption2{
+    color:white;
+    grid-area: lower1;
+    text-align:center;
+    z-index: 1;
+    font-size:1.5rem;
+    font-weight:1000;
+    padding:3rem 1rem;
+}
+
+.caption3{
+    color:white;
+    grid-area: lower2;
+    text-align:center;
+    z-index: 1;
+    font-size:1.5rem;
+    font-weight:1000;
+    padding:3rem 1rem;
+}
+
+.btnAlign{
+    margin-left: 15rem;
+}
+
+.btnAlignDev{
+    margin: -1rem -2rem 0 20rem;
+}
+
+.btn{
+    display: block;
+    
+    width: 13rem;
+    border-radius: 20px;
+    border-style: none;
+    height: auto;
+    background:#11B5F7;
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+    padding:1rem;
+    box-shadow: 1px 8px rgb(100, 100, 100);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #02afa1;
+  border-color: #02afa1;
+}
+
+
+@media (min-width: 52rem) {
+    .body{
+        height:100%;
+        width:100%;
+        background: black;
+        display: grid;
+        grid-template-columns: 25rem 1fr;
+        grid-template-rows: 3fr 2fr;
+        grid-template-areas:    "head1 illustration"
+                                "lower1 lower2";
+        padding: 4rem;
+    }
+    
+    .box_bg{
+        width:22rem;
+        height:20rem;
+        border: 1rem solid #11B5F7;
+        grid-area: head1;
+        margin: -1.5rem 1.5rem 0 3.0rem;
+        position:relative;
+        z-index: 0;
+    }
+    
+    .illus{
+        grid-area: illustration;
+        margin: -1.5rem 1.5rem 0 8.0rem;
+        justify-content: center;
+        
+    }
+    
+    .bigBox{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:2;
+        width:100%;
+        height: 16rem;
+        border: 1rem solid #11B5F7;
+        position:relative;
+        z-index: 0;
+        margin-top:2rem;
+    }
+    
+    
+    .caption1{
+        color:white;
+        grid-area:head1;
+        text-align:center;
+        z-index: 1;
+        font-size:1.5rem;
+        font-weight:1000;
+        padding:2rem 0;
+    }
+    
+    .caption2{
+        color:white;
+        grid-area: lower1;
+        text-align:center;
+        z-index: 1;
+        font-size:1.5rem;
+        font-weight:1000;
+        padding:3rem 1rem;
+    }
+    
+    .caption3{
+        color:white;
+        grid-area: lower2;
+        text-align:center;
+        z-index: 1;
+        font-size:1.5rem;
+        font-weight:1000;
+        padding:3rem 1rem;
+    }
+    
+    .btnAlign{
+        margin-left: 15rem;
+    }
+    
+    .btnAlignDev{
+        margin: -1rem -2rem 0 20rem;
+    }
+    
+    .btn{
+        display: block;
+        
+        width: 13rem;
+        border-radius: 20px;
+        border-style: none;
+        height: auto;
+        background:#11B5F7;
+        color: white;
+        font-size: 1rem;
+        margin-top: 30px;
+        padding:1rem;
+        box-shadow: 1px 8px rgb(100, 100, 100);
+    }
+    
+    .btn:hover,
+    .btn:active {
+      background-color: #02afa1;
+      border-color: #02afa1;
+    }
+    
+}
