@@ -220,7 +220,7 @@
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), var(--call-to-action));
         color: white;
         font-weight: bold;
-        margin-left: 2rem;
+        
     }
 
     .callToAction:hover{
@@ -247,7 +247,7 @@
     .iconLabel{
         display: flex;
         flex-direction: row;
-        width:50%;
+        width:100%;
         justify-content: space-between;
         color:white;
         left:0;
