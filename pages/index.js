@@ -36,7 +36,7 @@ export default function Home() {
           <div className={classes.lowerBox}>
             <div className={classes.caption2}>
               <p>
-                Plano learns from you!Our curated behaviour engine picks cues
+                Plano learns from you! Our curated behaviour engine picks cues
                 from your mood and understands the best course of action that
                 you should take
               </p>
