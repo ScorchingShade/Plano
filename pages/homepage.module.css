@@ -67,12 +67,16 @@
     box-shadow: 1px 8px rgb(100, 100, 100);
 }
 
-.btn:hover,
-.btn:active {
-  background-color: #02afa1;
-  border-color: #02afa1;
+.btn:hover {
+  background-color: white;
+  border-color: white;
+  color:#11B5F7;
 }
 
+
+.btn:active {
+    transform: translateY(2px);
+}
 
 .lowerContainer{
     display:flex;
@@ -219,10 +223,16 @@
         box-shadow: 1px 8px rgb(100, 100, 100);
     }
     
-    .btn:hover,
-    .btn:active {
-      background-color: #02afa1;
-      border-color: #02afa1;
+    .btn:hover{
+        background-color: white;
+        border-color: white;
+        color:#11B5F7;
     }
+
+
+    .btn:active {
+        transform: translateY(2px);
+    }
+    
     
 }
