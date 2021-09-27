@@ -41,7 +41,7 @@ function Navbar() {
         <button type="button" className={classes.callToAction} onClick={callToActionHandler}>
           Sign in
         </button>
-        <button className={classes.bars} onClick={mobileNavHandler}>
+        <button className={classes.bars} aria-label="navigation" onClick={mobileNavHandler}>
              <i className="fa fa-bars"></i>
         </button>
        

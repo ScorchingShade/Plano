@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import classes from "./homepage.module.css";
-import illust from "../public/images/home_graphic.png";
+import illust from "../public/images/home_graphic3.png";
 import Image from "next/image";
 import Button from "../ui/button";
 

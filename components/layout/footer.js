@@ -7,12 +7,14 @@ function Footer() {
     router.push("/");
   };
 
+  const label="Decide, don't stall!"
+
   return (
     <Fragment>
       <footer className={classes.appFooter}>
         <div className={classes.logo}>
           <Link href="/">Plano</Link>
-          <p className={classes.subheading}>Decide, don't stall!</p>
+          <p className={classes.subheading}>{label}</p>
         </div>
 
         <div className={classes.links}>
