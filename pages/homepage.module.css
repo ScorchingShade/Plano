@@ -5,8 +5,6 @@
     width:100%;
     flex-direction:column;
     
-    
-    
 
 }
 
@@ -221,12 +219,14 @@
         margin-top: 30px;
         padding:1rem;
         box-shadow: 1px 8px rgb(100, 100, 100);
+        cursor: pointer;
     }
     
     .btn:hover{
         background-color: white;
         border-color: white;
         color:#11B5F7;
+        cursor: pointer;
     }
 
 

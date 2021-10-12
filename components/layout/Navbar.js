@@ -14,8 +14,11 @@ function Navbar() {
         
     }
 
-    const callToActionHandler=()=>{
-        router.push("/");
+    const callToActionHandler=(e)=>{
+      e.preventDefault();
+      console.log("hello")
+        router.push("/auth/signin");
+        
         
     }
 

@@ -6,10 +6,11 @@
     background-color: black;
     height: auto;
     padding: 1rem 4rem;
-    position:fixed;
+    position:sticky;
     width: 100%;
     height: auto;
     z-index: 10;
+    top:0;
 }
 
 .navigation {
