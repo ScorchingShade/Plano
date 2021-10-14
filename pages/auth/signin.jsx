@@ -89,7 +89,7 @@ function Signin() {
       <Grid.Column style={{ maxWidth: "35rem" }} className={classes.gridColumn}>
         <Header icon as="h1">
           <Icon name="user circle" />
-          Login
+          Sign in to Plano
         </Header>
         <Form onSubmit={onSubmit}>
           <Segment stacked>
